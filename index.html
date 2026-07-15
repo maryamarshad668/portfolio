@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maryam Arshad — Architect of Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body { background: #050505; margin: 0; color: #F4F4F4; font-family: 'Inter', sans-serif; }
+      #root { min-height: 100vh; }
+      .app-loading {
+        display: flex; align-items: center; justify-content: center;
+        min-height: 100vh; flex-direction: column; gap: 24px;
+      }
+      .app-loading .dot {
+        width: 8px; height: 8px; border-radius: 50%;
+        background: #6EE7FF;
+        box-shadow: 0 0 20px #6EE7FF, 0 0 60px rgba(110,231,255,0.3);
+        animation: loadPulse 1.5s ease-in-out infinite;
+      }
+      .app-loading .text {
+        font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #888;
+      }
+      @keyframes loadPulse {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.5); opacity: 1; }
+      }
+    </style>
+    <script>
+      // Safety: if React doesn't render within 10s, force show content
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (root && root.querySelector('.app-loading')) {
+          root.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:16px;font-family:Inter,sans-serif;"><h1 style="font-size:3rem;font-weight:800;color:#6EE7FF;font-family:Syne,sans-serif;">Maryam Arshad</h1><p style="color:#888;font-size:1rem;">AI Engineer</p><p style="color:#666;font-size:0.8rem;">Loading full experience...</p></div>';
+        }
+      }, 10000);
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="app-loading">
+        <div class="dot"></div>
+        <div class="text">Initializing</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
