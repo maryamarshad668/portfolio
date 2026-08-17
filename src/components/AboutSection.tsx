@@ -58,23 +58,23 @@ function HolographicPortrait({ mouseX, mouseY }: { mouseX: number; mouseY: numbe
       >
         {/* Portrait photo — replace src with your actual photo */}
         <img
-  src="/images/myimage.jpeg"
-  alt="Maryam Arshad"
-  className="absolute inset-0 w-full h-full object-cover object-center"
-  style={{
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    opacity: 1,
-  }}
-  onLoad={() => {
-    const placeholder = document.getElementById("portrait-placeholder");
-    if (placeholder) placeholder.style.display = "none";
-  }}
-  onError={() => {
-    console.log("Image not found.");
-  }}
-/>
+         src={`${import.meta.env.BASE_URL}images/myimage.jpeg`}
+          alt="Maryam Arshad"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            opacity: 1,
+          }}
+          onLoad={() => {
+            const placeholder = document.getElementById('portrait-placeholder');
+            if (placeholder) placeholder.style.display = 'none';
+          }}
+          onError={() => {
+            console.log('Image not found.');
+          }}
+        />
 
         {/* Placeholder (hidden when photo loads) */}
         <div
@@ -91,13 +91,13 @@ function HolographicPortrait({ mouseX, mouseY }: { mouseX: number; mouseY: numbe
               border: '1px solid rgba(110,231,255,0.25)',
             }}
           />
-         <p>
-  Loading Portrait...
-</p>
+          <p>
+            Loading Portrait...
+          </p>
 
-<p>
-  public/images/myimage.jpg
-</p>
+          <p>
+            public/images/myimage.jpg
+          </p>
 </div>
         {/* Holographic shimmer overlay */}
         <motion.div

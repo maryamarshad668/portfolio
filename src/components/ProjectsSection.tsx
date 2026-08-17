@@ -14,6 +14,9 @@ interface Project {
   image: string; // path to the project's screenshot / cover image
 }
 
+
+
+
 const projects: Project[] = [
   {
     id: 'ai-crimescope-pk',
@@ -25,7 +28,7 @@ const projects: Project[] = [
     gradient: 'linear-gradient(135deg, rgba(212,175,55,0.08) 0%, transparent 60%)',
     accentColor: '#D4AF37',
     icon: '🕵️‍♀️',
-    image: '/projects/crimescope-pk.jpg',
+    image: `${import.meta.env.BASE_URL}projects/crimescope-pk.jpg`,
   },
   {
     id: 'ai-sentinel',
@@ -37,7 +40,7 @@ const projects: Project[] = [
     gradient: 'linear-gradient(135deg, rgba(110,231,255,0.08) 0%, transparent 60%)',
     accentColor: '#6EE7FF',
     icon: '🛡️',
-    image: '/projects/ai-sentinel.jpg',
+    image: `${import.meta.env.BASE_URL}projects/ai-sentinel.jpg`,
   },
   {
     id: 'FleetGuard AI',
@@ -49,7 +52,7 @@ const projects: Project[] = [
     gradient: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, transparent 60%)',
     accentColor: '#8B5CF6',
     icon: '⚓',
-    image: '/projects/fleetGuard-ai.jpg',
+    image: `${import.meta.env.BASE_URL}projects/fleetGuard-ai.jpg`,
   },
   {
     id: 'face-mask',
@@ -61,7 +64,7 @@ const projects: Project[] = [
     gradient: 'linear-gradient(135deg, rgba(212,175,55,0.06) 0%, transparent 60%)',
     accentColor: '#D4AF37',
     icon: '🔬',
-    image: '/projects/face-mask.jpg',
+    image: `${import.meta.env.BASE_URL}projects/face-mask.jpg`,
   },
 ];
 

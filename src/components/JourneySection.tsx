@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 
 
 const achievements = [
+  { year: '2026', title: 'AI/ML Lead', desc: 'Selected as a Lead for AI/ML interns', icon: '💻' },
   { year: '2026', title: 'HEC Generative AI Training', desc: 'Selected for national AI training program', icon: '🏛️' },
   { year: '2026', title: 'APMO — Asia-Pacific Mathematics Olympiad', desc: 'Represented at GIKI', icon: '🔢' },
   { year: '2024', title: 'HACK XVI Hackathon, LUMS', desc: 'Competitive hackathon experience', icon: '💻' },
@@ -10,6 +11,26 @@ const achievements = [
 ];
 
 const experiences = [
+   {
+    role: 'AI/ML Intern',
+    company: 'HisabDo',
+    period: 'Aug 2026 – Present',
+    points: [
+      'Working as an AI/ML Intern, contributing to the development and implementation of machine learning solutions for real-world business applications.',
+      'Gaining practical experience in data processing, model development, AI workflows, and integrating intelligent features into software systems.',
+    ],
+    color: '#8B5CF6',
+  },
+  {
+    role: 'AI-Engineering Training',
+    company: 'Knots Systems',
+    period: 'Aug 2026 – Present',
+    points: [
+      'Completed hands-on AI Engineering training focused on building and integrating modern AI applications.',
+      'Worked with Python, APIs, LLM-based solutions, prompt engineering, and AI workflows while learning how to move from AI concepts to practical implementations.',
+    ],
+    color: '#6EE7FF',
+  },
   {
     role: 'Teaching Assistant — Digital Logic Design',
     company: 'Information Technology University',
@@ -18,7 +39,7 @@ const experiences = [
       'Communicated complex technical concepts to undergraduates — same skill needed to document experiments and findings for engineering teams',
       'Managed queries and faculty coordination independently across a full semester',
     ],
-    color: '#6EE7FF',
+    color: '#8B5CF6',
   },
   {
     role: 'Content Writing Intern',
@@ -27,7 +48,7 @@ const experiences = [
     points: [
       'Delivered professional written output on deadline, translating technical and organizational requirements into clear documentation',
     ],
-    color: '#8B5CF6',
+    color: '#6EE7FF',
   },
 ];
 
